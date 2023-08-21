@@ -1,0 +1,246 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  background-color: #F5F5F5;
+}
+
+header {
+  background-color: #333;
+  color: #FFF;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  color: #FFF;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+
+nav ul li ul {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+nav ul li:hover > ul {
+  display: block;
+}
+
+nav ul li ul li {
+  display: block;
+}
+
+.hero-image {
+  background-image: url('https://via.placeholder.com/1920x800');
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  position: relative;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #FFF;
+  text-align: center;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.ads {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.ad {
+  margin: 20px;
+  text-align: center;
+}
+
+.ad img {
+  width: 350px;
+  height: 150px;
+}
+
+.ad p {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #FFF;
+  padding: 10px;
+  text-align: center;
+  margin-top: 40px;
+}
+header {
+  background-color: yellow;
+  color: #FFF;
+  padding: 10px;
+}
+/* Change the background color of the entire page */
+body {
+  background-color: #f0f0f0;
+}
+
+/* Change the background color of the menu bar */
+header {
+  background-color: black;
+}
+
+/* Change the text color of the menu links */
+nav ul li a {
+  color: #333;
+}
+
+/* Change the background color of the menu links on hover */
+nav ul li a:hover {
+  background-color: #333;
+  color: orange;
+}
+
+/* Change the background color of the submenu */
+nav ul li ul {
+  background-color: #FFF;
+}
+
+/* Change the text color of the submenu links */
+nav ul li ul li a {
+  color: #333;
+}
+
+/* Change the background color of the submenu links on hover */
+nav ul li ul li a:hover {
+  background-color: #333;
+  color: orange;
+}
+
+/* Styles for the main menu */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: #FFF;
+}
+
+nav ul li {
+  margin-right: 20px;
+  position: relative; /* Make the list item a positioned parent */
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a {
+  color: rgb(236,254,81);
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+  font-family: 'Avant Garde', sans-serif; 
+  font-style: italic;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+
+/* Styles for the dropdown menu */
+nav ul li ul {
+  display: none;
+  position: absolute;
+  top: 100%; /* Position the dropdown below its parent */
+  left: 0;
+  background-color: black;
+  width: 200px;
+  padding: 10px 0;
+  z-index: 1;
+
+}
+
+nav ul li:hover > ul {
+  display: block;
+}
+
+nav ul li ul li {
+  display: block;
+  margin: 0;
+}
+
+nav ul li ul li a {
+  padding: 8px 20px;
+  color: rgb(236,254,81);
+  display: block;
+}
+
+nav ul li ul li a:hover {
+  background-color: #777;
+}
+
+.logo {
+  font-size: 50px;
+  font-weight: bold;
+  color: darkorange;
+  margin: 20px;
+  animation: slide 2s ease-in-out infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(50px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
