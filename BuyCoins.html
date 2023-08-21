@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Game Store - Buy Games</title>
+  <link rel="stylesheet" href="buyC.css">
+  <style>
+  section {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px;
+  background-image: url("resimadi222.jpg");
+  background-size: cover; /* or set it to a specific value like "100% 100%" or "contain" */
+}
+
+    .container {
+      max-width: 500px;
+      width: 100%;
+    }
+
+    .title {
+      color: #444;
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    .form__group {
+      margin-bottom: 20px;
+    }
+
+    .form__label {
+      display: block;
+      font-size: 18px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .form__select,
+    .form__input {
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      font-size: 16px;
+      padding: 10px;
+      width: 100%;
+    }
+
+    .form__select {
+      height: 40px;
+    }
+
+    .form__input {
+      height: 40px;
+    }
+
+    .button {
+      background-color: #1d1d1d;
+      border: none;
+      border-radius: 4px;
+      color: black;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 10px 20px;
+      transition: all 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #23654f;
+    }
+
+    .button--primary {
+      background-color: rgb(236,254,81);
+    }
+
+    .form__total-price {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 20px;
+    }
+
+    .form__total-price span {
+      margin-right: 10px;
+    }
+  </style>
+  
+</head>
+    
+<body>
+  <header>
+ 
+      
+      <div class="logo" style="font-size:50px; font-weight: bold; color: yellowgreen;  margin: -10px; margin-left: 10px; font-family: 'Avant Garde', sans-serif; font-style: italic;  ">ByAcc</div>
+      
+      <nav>
+      <ul class="menu">
+        <li><a href="home.html">Home</a></li>
+        <li><a href="buy.html">Buy Game</a></li>
+        <li><a href="sell.html">Sell Game</a></li>
+        <li><a href="#">Work With Us</a></li>
+        <li>
+          <a href="BuyCoins.html">Other</a>
+          <ul>
+            <li><a href="BuyCoins.html">Others 1</a></li>
+            <li><a href="SellCoins.html">Others 2</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Lucks</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section >
+    <div class="container" style="margin-left: -890px; margin-top: -150px;">
+
+   <h1 class="title" style="background-color: black;  padding: 10px;   color: rgb(236,254,81); border-radius: 55px; font-family: 'Avant Garde', sans-serif; font-style: italic; ">Buy Web App Account</h1>
+
+
+
+      <form class="form">
+        
+        <div class="form__group">
+ <label for="platform" class="form__label" style="background-color: black; color: rgb(236,254,81); padding: 5px; border-radius: 5px; display: inline-block; padding-left: 10px; border-radius:65px; width:120px;  text-indent: 13px; font-family: 'Avant Garde', sans-serif; font-style: italic;">
+  Platform
+</label>
+
+
+          <select id="platform" name="platform" class="form__select">
+            <option value="pc">PC</option>
+            <option value="ps">PS</option>
+          </select>
+        </div>
+          
+        <div class="form__group">
+          <label for="units" class="form__label" style="background-color: black; color: rgb(236,254,81); padding: 5px; border-radius: 5px; display: inline-block; padding-left: 10px; border-radius:65px; width:120px;  text-indent: 28px; font-family: 'Avant Garde', sans-serif; font-style: italic;">
+  Units
+  
+</label>
+
+        <div style="position: relative;">
+  <input  id="units" name="units" min="1" max="10" class="form__input" placeholder="Enter the number of units" oninput>
+  <span style="position: absolute; right: 10px; top: 7px; font-size: 15px; font-weight: bold;" id="earnCoinsk" class="earnCoinsk">K</span>
+</div>
+
+           
+        </div>
+        <div class="form__group">
+          <label for="total-price" class="form__label" style="background-color: black; color: rgb(236,254,81); padding: 5px; border-radius: 5px; display: inline-block; padding-left: 10px; border-radius:65px; width:120px;  text-indent: 4px;  font-family: 'Avant Garde', sans-serif; font-style: italic; ">Total Price</label>
+
+          <input type="text" id="total-price" name="total-price" readonly class="form__input">
+        </div>
+        <div class="form__group">
+          <button type="submit" class="button button--primary" style="font-family: 'Avant Garde', sans-serif; font-style: italic;">Buy Now</button>
+        </div>
+          <h1 class="title" style="background-color: #23654f; border: 2px solid #ccc; padding: 10px; border-radius: 5px; box-shadow: 2px 2px 5px #ddd; color: white; font-size: 16px; font-family: 'Avant Garde', sans-serif; font-style: italic;">When you click on the Buy Now button, you will be directed to the page. Enter your information. We will contact you shortly.</h1>
+
+      </form>
+    </div>
+      
+  </section>
+
+  <script>
+    const unitPrice = 15;
+    const unitsInput = document.getElementById("units");
+    const totalPriceInput = document.getElementById("total-price");
+
+    unitsInput.addEventListener("input", () => {
+      const units = unitsInput.value;
+      const totalPrice = units * unitPrice;
+      totalPriceInput.value = `$${totalPrice}`;
+    });
+  </script>
+
+
+  
+
+</body>
+
+</html>
